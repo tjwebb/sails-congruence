@@ -1,9 +1,11 @@
 language: node_js
 node_js:
-- '0.10'
-- '0.11'
+  - '0.10'
+  - '0.11'
+
 notifications:
   email: false
+
 deploy:
   provider: npm
   email: me@traviswebb.com
@@ -12,3 +14,4 @@ deploy:
   on:
     tags: true
     repo: tjwebb/sails-congruence
+    all_branches: true
