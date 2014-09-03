@@ -1,6 +1,6 @@
 {
   "name": "sails-congruence",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generate browser-compatible validator functions for Sails.js models. A congruence extension.",
   "main": "index.js",
   "scripts": {
