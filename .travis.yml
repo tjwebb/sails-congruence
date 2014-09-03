@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.11'
+notifications:
+  email: false
+deploy:
+  provider: npm
+  email: me@traviswebb.com
+  api_key:
+    secure: uVAx1Sr34KrqNhbd0024Y8K+Wzi5UtWnq0DRwH/nQ0fXihPcM9BYxDHtBP6IGIO8ebeKUOp7uTGr4ojSA+KNkNYM5EQPCFVvWZ4A3tfdA/0c9eyL+7ETw/KMLgyHUhKGmoR7yO3xtV3OLcJDZsmhrY6fP1DogPPhK3X11TMmYBk=
+  on:
+    tags: true
+    repo: tjwebb/sails-congruence
