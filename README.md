@@ -16,18 +16,14 @@ Create a validator function from a model, e.g. [Account](https://github.com/tjwe
 
 ```js
 var congruence = require('sails-congruence');
-var validate = congruence.getSailsValidator(Account);
+var validateAccount = congruence.getSailsValidator(Account);
 
-Account
-  .create({
-    name: 'myaccount',
-    type: 'X'
-  })
-  .then(function (account) {
-    // returns false. 'X' is not a valid account type
-    // https://github.com/tjwebb/xtuple-api/blob/master/api/models/Account.js#L17
-    return validate(account);
-  });
+var valid = validateAccount({
+  name: 'myaccount',
+  type: 'X'
+})
+// returns false. 'X' is not a valid account type
+// https://github.com/tjwebb/xtuple-api/blob/master/api/models/Account.js#L17
 ```
 
 ## API
